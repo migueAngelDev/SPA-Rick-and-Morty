@@ -1,0 +1,57 @@
+html, body {
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color:rgb(36, 40, 47);
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background-color:rgb(32, 35, 41);
+    padding: 2rem ;
+}
+
+.header p {
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(30, 245, 30);
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main div {
+    margin: 0 150px 0 0  ;
+}
+
+.btn-back {
+    color: white; 
+    background-color: rgb(26, 6, 59);
+    border: none;
+    border-radius: 35px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btn-back:hover {
+    cursor: pointer;
+    background-color: rgb(4, 4, 105);
+}
+
+.main img {
+    margin: 250px 0 0 0 ;
+
+    width: 140%;
+    height: auto;
+}
+
+
+
