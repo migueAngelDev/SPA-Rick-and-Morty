@@ -9,6 +9,8 @@ const url = "https://rickandmortyapi.com/api/character";
 fetch(`${url}/${id}`)
   .then((Response) => Response.json())
   .then((datas) => {
+    let dateCreated = new Date(`${datas.created}`);
+
     $main.innerHTML = `
 
         <div>
@@ -37,7 +39,7 @@ fetch(`${url}/${id}`)
           <br />
           <p>Episodes: ${datas.episode.length}</p>                        
           <br />
-          <p>Created: ${datas.created}</p>                   
+          <p>Created: ${dateCreated.toLocaleString()}</p>                   
                    
           </div>
 
