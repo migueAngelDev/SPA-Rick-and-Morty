@@ -1,3 +1,5 @@
+import searchFilters from "./search_filter.js";
+
 const $Data = document.getElementById("datos");
 
 const ul = document.createElement("ul");
@@ -12,6 +14,8 @@ fetch(url)
 
     datas.forEach((data) => {
       const element = document.createElement("li");
+
+      element.setAttribute("class", "filter-li");
 
       element.innerHTML = `
 
@@ -32,5 +36,9 @@ fetch(url)
       });
     });
   });
+
+document.addEventListener("DOMContentLoaded", (e) => {
+  searchFilters(".search-filter", ".filter-li");
+});
 
 $Data.appendChild(ul);
